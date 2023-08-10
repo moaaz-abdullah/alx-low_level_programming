@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Initial Point
+ * main - Entry Point
  *
- * Description: First printf function
+ * Description : First printf function
  *
  * Return : 0
  */
