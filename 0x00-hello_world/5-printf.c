@@ -3,9 +3,9 @@
 /**
  * main - Entry Point
  *
- * Description : First printf function
+ * Description: First printf function
  *
- * Return : 0
+ * Return: 0
  */
 
 int main(void)
