@@ -5,7 +5,6 @@
  *
  * Return: Always 0.
  */
- 
 int main(void)
 {
 	char lett;
@@ -17,5 +16,6 @@ int main(void)
 	}
 
 	putchar('\n');
+
 	return (0);
 }
