@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 /**
  * print_alphabet - prints the english alphabet from a-z.
  * 
@@ -6,11 +6,11 @@
  */
 void print_alphabet(void)
 {
-	char ch;
+	int letter;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		_putchar(ch);
+		_putchar(letter);
 	}
     
 	_putchar('\n');
