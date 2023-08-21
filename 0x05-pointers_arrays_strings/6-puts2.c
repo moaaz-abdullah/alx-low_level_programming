@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * puts2 - prints 1 char out of 2 of a string
- * and a new line after that
- * @str: string to print the chars
- */a
+ * puts2 - prints one char out of 2 of a string
+ * followed by a new line
+ * @str: string to print the chars from
+ */
 void puts2(char *str)
 {
 	int len, i;
