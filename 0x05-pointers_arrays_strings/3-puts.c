@@ -4,7 +4,6 @@
  * _puts - prints a string
  * @str: pointer to the string to be printed
  */
-
 void _puts(char *str)
 {
 	int i;
@@ -13,6 +12,5 @@ void _puts(char *str)
 	{
 		_putchar(str[i]);
 	}
-	
 	_putchar('\n');
 }
