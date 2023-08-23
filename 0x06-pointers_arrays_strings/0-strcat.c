@@ -8,20 +8,20 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int lengthD, lengthS;
+	int lenD, lenS;
 
-	lengthD = 0;
-	lengthS = 0;
+	lenD = 0;
+	lenS = 0;
 
-	while (*(dest + lengthD) != '\0')
-		lengthD++;
+	while (*(dest + lenD) != '\0')
+		lenD++;
 
-	while (*(src + lengthS) != '\0' && lengthD < 97)
+	while (*(src + lenS) != '\0' && lenD < 97)
 	{
-		*(dest + lengthD) = *(src + lengthS);
-		lengthD++;
-		lengthS++;
+		*(dest + lenD) = *(src + lenS);
+		lenD++;
+		lenS++;
 	}
-	*(dest + lengthD) = '\0';
+	*(dest + lenD) = '\0';
 	return (dest);
 }
