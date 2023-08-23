@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * leet - encode into 1337speak
- * @n: input value
- * Return: n value
+ * leet - change vowels to numbers.
+ * @s: analized string.
+ *
+ * Return: String with all vowels changed.
  */
 char *leet(char *s)
 {
