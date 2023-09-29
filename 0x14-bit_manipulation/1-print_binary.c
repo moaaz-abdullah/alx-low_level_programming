@@ -1,37 +1,25 @@
 #include "main.h"
 
 /**
- * binary_to_uint - converts a binary number to an
- * unsigned int.
- * @b: binary.
+ * print_binary - prints a number as binary string
+ * @n: the number to print
  *
- * Return: unsigned int.
+ * Return: void
  */
-unsigned int binary_to_uint(const char *b)
+void print_binary(unsigned long int n)
 {
-	unsigned int ui;
-	int len, base_two;
+	int bit = sizeof(n) * 8, printed = 0;
 
-	if (!b)
-		return (0);
-
-	ui = 0;
-
-	for (len = 0; b[len] != '\0'; len++)
-		;
-
-	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+	while (bit)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (n & 1L << --bit)
 		{
-			return (0);
+			_putchar('1');
+			printed++;
 		}
-
-		if (b[len] & 1)
-		{
-			ui += base_two;
-		}
+		else if (printed)
+			_putchar('0');
 	}
-
-	return (ui);
+	if (!printed)
+		_putchar('0');
 }
